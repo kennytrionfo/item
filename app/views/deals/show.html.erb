@@ -1,2 +1,10 @@
 <h1>Deals#show</h1>
 <p>Find me in app/views/deals/show.html.erb</p>
+
+<h1> Deal </h1>
+<h2><%= @deal.title  %></h2>
+<h3><%= @deal.description %></h2>
+<p><%= @deal.number %></p>
+<p><%= @deal.price %></p>
+
+<%= link_to 'Back', deals_index_path %>

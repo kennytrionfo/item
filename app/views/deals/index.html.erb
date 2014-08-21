@@ -1,2 +1,12 @@
 <h1>Deals#index</h1>
 <p>Find me in app/views/deals/index.html.erb</p>
+
+<h1> Deals </h1>
+<% @deals.each do |deal| %>
+    <h2><%= deal.title %></h2>
+    <h3><%= deal.description %></h2>
+    <p><%= deal.number %></p>
+    <p><%= deal.price %></p>
+    <%= link_to 'Show deal', deals_show_path(deal.id) %>
+
+<% end %>
