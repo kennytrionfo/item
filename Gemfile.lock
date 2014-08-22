@@ -90,6 +90,10 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.3.2)
+    rakuten (0.1.1)
+      activesupport
+      i18n
+      json (>= 1.4.6)
     rdoc (4.1.1)
       json (~> 1.4)
     sass (3.2.19)
@@ -131,12 +135,14 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  httparty
   jbuilder (~> 2.0)
   jquery-rails
   pg
   popshops
   pry-rails
   rails (= 4.1.1)
+  rakuten
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring

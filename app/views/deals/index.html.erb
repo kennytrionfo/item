@@ -3,10 +3,13 @@
 
 <h1> Deals </h1>
 <% @deals.each do |deal| %>
-    <h2><%= deal.title %></h2>
+    <h2><%= deal.description %></h2>
     <h3><%= deal.description %></h2>
     <p><%= deal.number %></p>
     <p><%= deal.price %></p>
     <%= link_to 'Show deal', deals_show_path(deal.id) %>
 
 <% end %>
+
+# Deal.title = popshops_deal['description']
+# Deal.description = popshops_deal['name']
